@@ -1,0 +1,61 @@
+<header>
+  <section class="profile-w">
+    <img src="assets/icon/header/profile.svg" alt="" />
+    <div class="profile">
+      <p>Горелов Давид Романович</p>
+      <img style="width: 75px" src="assets/icon/header/exit.svg" alt="" />
+    </div>
+  </section>
+  <nav>
+    <div>
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        "
+        (click)="openPac()"
+      >
+        <div class="page">
+          <img src="assets/icon/header/mypac.svg" alt="" />
+          <h2>Мои пациенты</h2>
+        </div>
+        <div style="margin-top: 20px">
+          <svg
+            width="16"
+            height="9"
+            viewBox="0 0 16 9"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            style="cursor: pointer"
+            [ngClass]="{ 'open-arrow': !isOpenPac }"
+          >
+            <path d="M15 8L8 1L1 8" stroke="black" />
+          </svg>
+        </div>
+      </div>
+      <ul *ngIf="isOpenPac">
+        <li>Царева Мария Матвеевна</li>
+        <li routerLink="patient" routerLinkActive="router">
+          Трофимов Дмитрий Сергеевич
+        </li>
+        <li>Шакирова Аделя Альбертовна</li>
+        <li>Галиев Ильдар Радикович</li>
+        <li>Полякова Полина Ивановна</li>
+        <li>Долгова Вера Артёмовна</li>
+      </ul>
+    </div>
+    <div class="page">
+      <img src="assets/icon/header/red.svg" alt="" />
+      <h2>Записи</h2>
+    </div>
+    <div class="page">
+      <img src="assets/icon/header/uvedi.svg" alt="" />
+      <h2>Уведомления</h2>
+    </div>
+    <div class="page">
+      <img src="assets/icon/header/setting.svg" alt="" />
+      <h2>Настройки</h2>
+    </div>
+  </nav>
+</header>

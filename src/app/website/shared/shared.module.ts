@@ -1,13 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RecordsService } from './services/records.service';
 
 
 
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule,
-  ],
+    CommonModule
+  ]
 })
-export class RecordsModule { }
+export class SharedModule { }

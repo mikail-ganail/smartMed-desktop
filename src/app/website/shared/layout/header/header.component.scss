@@ -1,0 +1,51 @@
+header {
+  width: 300px;
+  background-color: #f5f5f5;
+  height: 100vh;
+  padding: 30px;
+}
+
+.profile-w {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+}
+
+.open-arrow {
+  transform: rotate(180deg);
+}
+
+.page {
+  display: flex;
+  gap: 10px;
+  user-select: none;
+  cursor: pointer;
+  margin-top: 20px;
+
+  h2 {
+    font-weight: 400;
+    font-size: 24px;
+  }
+}
+
+ul {
+    li {
+        font-size: 17px;
+        font-weight: 300;
+        padding: 5px 0;
+        color: #999999;
+        cursor: pointer;
+    }
+}
+
+.router {
+  font-weight: 400 !important;
+  color: #443E3E !important;
+}
